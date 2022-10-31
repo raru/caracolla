@@ -11,9 +11,11 @@ module.exports = {
 			currentColor: '#333333',
 			'cinza': '#808080',
 			'verde': '#65853a',
+			'vmusgo': '#A99B38',
 			'marrom': '#a56c55',
 			'home': '#f7f6ed',
 			'nude': '#efeedc',
+			'laranja': '#F69531',
 			'tahiti': {
 			  100: '#tahiti',
 			  200: '#a5f3fc',

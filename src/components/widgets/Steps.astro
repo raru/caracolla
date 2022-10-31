@@ -3,23 +3,32 @@ import { Icon } from 'astro-icon';
 import Picture from '~/components/core/Picture.astro';
 ---
 
-<section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-6xl">
-	<div class="max-w-2xl m-auto text-center">
-			<Picture
-				class="mx-auto mb-12 text-center"
-				src={import('~/assets/images/home_caracol.png')}
-				widths={[60, 120]}
-				sizes="(max-width: 768px) 100vw, 120px"
-				alt="Caracol Caracolla"
-				aspectRatio="120:auto"
-			/>
+<section>
+	<div class="w-full mx-auto">
+		<Picture
+			src={import('~/assets/images/sobrenos.jpg')}
+			class="mx-auto w-full"
+			widths={[767, 1714]}
+			sizes=" (max-width: 767px) 767px, 1714px"
+			alt="pratodomundo, todo dia"
+			aspectRatio="16:9"
+		/>
+	</div>
+</section>
+<section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-6xl bg-nude">
 
-		<small>sobre nós</small>
-		<hr class="w-2 m-auto mb-8">
-		<h2 class="text-3xl font-bold leading-tighter tracking-tighter mb-4 text-cinza">
-			Um lugar para comer comida boa, o dia todo, num espiral delicioso de sabores.
-		</h2>
-		<small>leia mais</small>
-seta
+	<div class="max-w-2xl m-auto text-center">
+
+		<h2 class="text-laranja">sobre nós</h2>
+		<hr class="w-2 m-auto mb-8 text-laranja">
+		<p class="text-1xl leading-tighter tracking-tighter mb-4 text-marrom">
+			Numa charmosa rua no coração da Vila Nova Conceição em São Paulo, nasce o Caracolla - café e restaurante.
+			<br/><br/>
+			Projeto da Chef Patricia Helú, especializada em gastronomia natural, que desenvolveu um cardápio contemporâneo inspirado em suas viagens e experiências mundo afora. Comida gostosa, acolhedora e cheia de intensidade, preparada com vegetais que são transformados em pratos surpreendentes.
+			<br/><br/>
+			O Caracolla materializa seu aprendizado gastronômico reunido ao longo dos anos com receitas inspiradas em suas vivências pessoais. Para tocar o projeto ao seu lado Patricia conta com sua sócia executiva Thaina Andrade que executará com perfeição suas criações.
+			<br/><br/>
+			A atmosfera do restaurante se transforma ao decorrer do dia, oferecendo uma experiência única desde o café-da-manhã até o jantar. Além das principais refeições, é uma ótima opção para pausas gostosas ao longo do dia, acompanhadas de um bom café e doces artesanais.		
+	</p>
 	</div>
 </section>

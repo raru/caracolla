@@ -5,11 +5,11 @@ import Picture from '~/components/core/Picture.astro';
 
 ---
 
-<footer class="bg-nude">
+<footer class="bg-nude text-marrom text-center">
 	<div class="max-w-6xl mx-auto px-4 sm:px-6">
 		<div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
 			<div class="col-span-12 lg:col-span-4">
-				<div class="mb-2">
+				<!-- <div class="mb-2">
 					<a class="inline-block" href={getHomePermalink()}>
 			<Picture
 				class=""
@@ -19,32 +19,37 @@ import Picture from '~/components/core/Picture.astro';
 				alt="Caracolla"
 				aspectRatio="2:2"
 			/>
-					</a>
-				</div>
+					</a> 
+
+				</div> -->
+
+				<Icon name="tabler:brand-instagram" class="w-5 h-5 text-cinza" /> 
+				<h5>Horário</h5>
+				<hr>
+				<strong> Seg:</strong> fechado<br/>
+				<strong>Terça: </strong>das 8h ás 17h<br/>
+				<strong>Quarta, Quinta e Sextas:</strong> das 8h ás 23h Sábado: 9h ás 23h<br/>
+			<strong>Domingo: </strong>9h ás 17h
+
 			</div>
-			<div class="col-span-6 md:col-span-3 lg:col-span-2">
+
+			<div class="col-span-6 md:col-span-4 lg:col-span-4">
+					<Icon name="tabler:brand-facebook" class="w-5 h-5 text-cinza" /> 
+					
+					<h5>Local</h5>
+					<hr>
+					Rua Dina, 76<br/>
+					Vila Nova Conceição 
+
 			</div>
-			<div class="col-span-6 md:col-span-3 lg:col-span-2">
-			</div>
-			<div class="col-span-6 md:col-span-6 lg:col-span-4">
-				<ul class="text-sm">
-					<li class="mb-2">
-						<Icon name="tabler:brand-facebook" class="w-5 h-5 text-cinza" /> <a class="text-cinza transition duration-150 ease-in-out" href="#"
-							>Rua Dina, 76 , Vila Nova Conceição </a
-						>
-					</li>
-					<li class="mb-2">
-						<Icon name="tabler:brand-instagram" class="w-5 h-5 text-cinza" /> <a class="text-cinza transition duration-150 ease-in-out" href="#"
-							>@cara.colla</a
-						>
-					</li>
-					<li class="mb-2">
-						<Icon name="tabler:brand-twitter" class="w-5 h-5 text-cinza" /><a class="text-cinza transition duration-150 ease-in-out" href="#"
-							>
-							falecom@caracolla.com.br</a
-						>
-					</li>
-				</ul>
+			<div class="col-span-6 md:col-span-4 lg:col-span-4">
+
+						<Icon name="tabler:brand-twitter" class="w-5 h-5 text-cinza" />
+						<h5>Contato/Reservas</h5>
+						<hr>
+falecom@caracolla.com.br <br/>
+whatsapp: 11 9999 9999
+
 			</div>
 
 			<div class="col-span-12 lg:col-span-12">
@@ -63,3 +68,18 @@ import Picture from '~/components/core/Picture.astro';
 
 	</div>
 </footer>
+
+<style>
+	h5 {     font-size: 1.1em;
+    font-weight: 600;
+	}
+
+	hr {
+    border-bottom: 2px solid;
+	margin: 0.5em auto;
+    width: 30px;
+}
+
+	footer {     background: url('~/assets/footer_bg.png');
+  text-align: center; }
+</style>
