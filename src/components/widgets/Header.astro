@@ -1,15 +1,11 @@
 ---
 import { Icon } from 'astro-icon';
 import Logo from '~/components/atoms/Logo.astro';
-
-
-// import { getPermalink, getBlogPermalink, getHomePermalink } from '~/utils/permalinks';
 import { getPermalink, getHomePermalink } from '~/utils/permalinks';
-
 ---
 
 <header
-	class="sticky top-0 z-40 flex-none mx-auto w-full bg-marrom md:bg-marrom dark:bg-marrom dark:md:bg-marrom md:backdrop-blur-sm border-b dark:border-b-0"
+	class="sticky top-0 z-40 flex-none mx-auto w-full bg-marrom"
 >
 	<div class="py-3 px-3 mx-auto w-full md:flex max-w-6xl md:px-4">
 		<div class="flex justify-between">
@@ -34,26 +30,29 @@ import { getPermalink, getHomePermalink } from '~/utils/permalinks';
 				<li>
 					<a
 						class="font-medium text-nude hover:text-black px-4 py-3 flex items-center transition duration-150 ease-in-out"
-						href={getPermalink('useful-resources-to-create-websites', 'post')}
+						href={getPermalink('sobrenos', 'post')}
 						>Sobre nós
 					</a>
 				</li>
 				<li>
 					<a
 						class="font-medium text-nude hover:text-black px-4 py-3 flex items-center transition duration-150 ease-in-out"
-						href="#">Patricia Helú</a
+						href={getPermalink('patriciahelu', 'post')}
+						>Patricia Helú</a
 					>
 				</li>
 				<li>
 					<a
 						class="font-medium text-nude hover:text-black px-4 py-3 flex items-center transition duration-150 ease-in-out"
-						href="#">Menu</a
+						href={getPermalink('menu', 'post')}
+						>Menu</a
 					>
 				</li>	
 				<li>
 					<a
 						class="font-medium text-nude hover:text-black px-4 py-3 flex items-center transition duration-150 ease-in-out"
-						href="#">Contato</a
+						href={getPermalink('contato', 'post')}
+						>Contato</a
 					>
 				</li>								
 			</ul>
@@ -68,6 +67,6 @@ import { getPermalink, getHomePermalink } from '~/utils/permalinks';
 
 <style>
 header {
-    background: url('~/assets/header_bkg.png') bottom repeat-x;
+	background: url('assets/images/header_bkg.png');
 }
 </style>
